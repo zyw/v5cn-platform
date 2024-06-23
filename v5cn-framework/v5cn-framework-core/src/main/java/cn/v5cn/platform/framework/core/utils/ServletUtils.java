@@ -33,6 +33,10 @@ public class ServletUtils extends JakartaServletUtil {
         }
     }
 
+    public static String getClientIP() {
+        return getClientIP(getRequest());
+    }
+
     /**
      * 获取response
      */

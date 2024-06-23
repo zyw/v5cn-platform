@@ -29,6 +29,8 @@
         <lombok.version>1.18.32</lombok.version>
         <mapstruct-plus.version>1.4.2</mapstruct-plus.version>
         <alibaba-ttl.version>2.14.5</alibaba-ttl.version>
+        <springdoc.version>2.5.0</springdoc.version>
+        <therapi-javadoc.version>0.15.0</therapi-javadoc.version>
 
         <!-- sa-token -->
         <satoken.version>1.38.0</satoken.version>
@@ -73,6 +75,17 @@
                 <artifactId>transmittable-thread-local</artifactId>
                 <version>${alibaba-ttl.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.therapi</groupId>
+                <artifactId>therapi-runtime-javadoc</artifactId>
+                <version>${therapi-javadoc.version}</version>
+            </dependency>
+
 
 
             <!-- Sa-Token 权限认证, 在线文档：http://sa-token.dev33.cn/ -->
@@ -127,7 +140,17 @@
             </dependency>
             <dependency>
                 <groupId>cn.v5cn.platform</groupId>
+                <artifactId>v5cn-doc-spring-boot-starter</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.v5cn.platform</groupId>
                 <artifactId>v5cn-json-spring-boot-starter</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.v5cn.platform</groupId>
+                <artifactId>v5cn-log-spring-boot-starter</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>

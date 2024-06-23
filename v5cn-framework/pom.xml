@@ -21,6 +21,8 @@
         <module>v5cn-json-spring-boot-starter</module>
         <module>v5cn-security-spring-boot-starter</module>
         <module>v5cn-tenant-spring-boot-starter</module>
+        <module>v5cn-log-spring-boot-starter</module>
+        <module>v5cn-doc-spring-boot-starter</module>
     </modules>
 
 </project>
