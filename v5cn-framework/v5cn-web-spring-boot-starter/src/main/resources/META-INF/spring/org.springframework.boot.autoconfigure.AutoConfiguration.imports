@@ -1,0 +1,4 @@
+cn.v5cn.platform.framework.web.config.FilterAutoConfiguration
+cn.v5cn.platform.framework.web.config.I18nAutoConfiguration
+cn.v5cn.platform.framework.web.config.ResourcesAutoConfiguration
+cn.v5cn.platform.framework.web.config.UndertowAutoConfiguration

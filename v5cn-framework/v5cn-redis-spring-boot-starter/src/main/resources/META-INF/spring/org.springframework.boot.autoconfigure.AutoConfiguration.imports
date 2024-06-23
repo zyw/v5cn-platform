@@ -1,0 +1,2 @@
+cn.v5cn.platform.framework.redis.config.RedisAutoConfiguration
+cn.v5cn.platform.framework.redis.config.CacheAutoConfiguration
