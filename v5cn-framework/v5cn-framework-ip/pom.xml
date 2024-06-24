@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.v5cn.platform</groupId>
+        <artifactId>v5cn-framework</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>v5cn-framework-ip</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.v5cn.platform</groupId>
+            <artifactId>v5cn-framework-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.lionsoul</groupId>
+            <artifactId>ip2region</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

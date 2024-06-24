@@ -24,6 +24,7 @@
         <module>v5cn-log-spring-boot-starter</module>
         <module>v5cn-doc-spring-boot-starter</module>
         <module>v5cn-protection-spring-boot-starter</module>
+        <module>v5cn-framework-ip</module>
     </modules>
 
 </project>

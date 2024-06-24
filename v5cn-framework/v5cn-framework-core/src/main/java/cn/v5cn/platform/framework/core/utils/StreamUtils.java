@@ -5,10 +5,9 @@ import cn.hutool.core.map.MapUtil;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
-import java.util.Collection;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
@@ -57,5 +56,23 @@ public class StreamUtils {
             return MapUtil.newHashMap();
         }
         return collection.stream().filter(Objects::nonNull).collect(Collectors.toMap(key, Function.identity(), (l, r) -> l));
+    }
+
+    public static <T> T findFirst(Collection<T> from, Predicate<T> predicate) {
+        return findFirst(from, predicate, Function.identity());
+    }
+
+    public static <T, U> U findFirst(Collection<T> from, Predicate<T> predicate, Function<T, U> func) {
+        if (CollUtil.isEmpty(from)) {
+            return null;
+        }
+        return from.stream().filter(predicate).findFirst().map(func).orElse(null);
+    }
+
+    public static <T, U> List<U> convertList(Collection<T> from, Function<T, U> func, Predicate<T> filter) {
+        if (CollUtil.isEmpty(from)) {
+            return new ArrayList<>();
+        }
+        return from.stream().filter(filter).map(func).filter(Objects::nonNull).collect(Collectors.toList());
     }
 }

@@ -31,6 +31,7 @@
         <alibaba-ttl.version>2.14.5</alibaba-ttl.version>
         <springdoc.version>2.5.0</springdoc.version>
         <therapi-javadoc.version>0.15.0</therapi-javadoc.version>
+        <ip2region.version>2.7.0</ip2region.version>
 
         <!-- sa-token -->
         <satoken.version>1.38.0</satoken.version>
@@ -39,6 +40,9 @@
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
         <dynamic-ds.version>4.3.0</dynamic-ds.version>
         <p6spy.version>3.9.1</p6spy.version>
+
+        <!-- 服务保障相关 -->
+        <lock4j.version>2.2.7</lock4j.version>
 
         <!-- Redis -->
         <redisson.version>3.31.0</redisson.version>
@@ -85,8 +89,11 @@
                 <artifactId>therapi-runtime-javadoc</artifactId>
                 <version>${therapi-javadoc.version}</version>
             </dependency>
-
-
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region.version}</version>
+            </dependency>
 
             <!-- Sa-Token 权限认证, 在线文档：http://sa-token.dev33.cn/ -->
             <dependency>
@@ -130,6 +137,19 @@
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson.version}</version>
+            </dependency>
+
+            <!-- Lock4j 服务保障相关 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>lock4j-redisson-spring-boot-starter</artifactId>
+                <version>${lock4j.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>redisson-spring-boot-starter</artifactId>
+                        <groupId>org.redisson</groupId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- 自定义模块 -->

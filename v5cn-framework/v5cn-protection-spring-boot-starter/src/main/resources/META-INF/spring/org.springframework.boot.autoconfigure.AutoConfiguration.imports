@@ -1,2 +1,3 @@
 cn.v5cn.platform.framework.protection.idempotent.config.IdempotentAutoConfiguration
 cn.v5cn.platform.framework.protection.ratelimiter.config.RateLimiterAutoConfiguration
+cn.v5cn.platform.framework.protection.lock4j.config.Lock4jAutoConfiguration

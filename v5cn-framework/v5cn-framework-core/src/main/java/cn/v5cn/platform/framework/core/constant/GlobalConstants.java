@@ -16,6 +16,11 @@ public interface GlobalConstants {
     int REPEATED_REQUESTS = 900;
 
     /**
+     * 请求失败，请稍后重试
+     */
+    int LOCKED = 423;
+
+    /**
      * 请求过于频繁，请稍后重试
      */
     int TOO_MANY_REQUESTS = 429;

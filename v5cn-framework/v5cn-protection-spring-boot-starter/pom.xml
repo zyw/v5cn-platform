@@ -15,6 +15,11 @@
 
         <dependency>
             <groupId>cn.v5cn.platform</groupId>
+            <artifactId>v5cn-framework-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.v5cn.platform</groupId>
             <artifactId>v5cn-satoken-spring-boot-starter</artifactId>
         </dependency>
 
@@ -26,6 +31,18 @@
         <dependency>
             <groupId>cn.v5cn.platform</groupId>
             <artifactId>v5cn-redis-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- Lock4j 服务保障相关 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>lock4j-redisson-spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>redisson-spring-boot-starter</artifactId>
+                    <groupId>org.redisson</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
 <!--        <dependency>-->
