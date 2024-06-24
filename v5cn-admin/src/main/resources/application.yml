@@ -5,7 +5,6 @@ v5cn:
   # 版本
   version: ${revision}
 
-# 开发环境配置
 server:
   port: 8080
   servlet:
@@ -137,3 +136,31 @@ v5cn.xss:
   excludes: /system/notice
   # 匹配链接
   urlPatterns: /system/*,/monitor/*,/tool/*
+
+springdoc:
+  api-docs:
+    # 是否开启接口文档
+    enabled: true
+  info:
+    # 标题
+    title: '标题：${v5cn.name} V5平台系统_接口文档'
+    # 描述
+    description: '描述：${v5cn.name} V5平台系统_接口文档'
+    # 版本
+    version: '版本：${v5cn.version}'
+    # 作者信息
+    contact:
+      name: ZYW
+      email: zyw090111@163.com
+      url: https://github.com/zyw/v5cn-platform
+  components:
+    # 鉴权方式配置
+    security-schemes:
+      apiKey:
+        type: APIKEY
+        in: HEADER
+        name: ${sa-token.token-name}
+  #这里定义了两个分组，可定义多个，也可以不定义
+  group-configs:
+    - group: 1.系统模块
+      packages-to-scan: cn.v5cn.platform.system

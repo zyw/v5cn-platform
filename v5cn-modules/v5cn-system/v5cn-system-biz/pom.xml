@@ -17,6 +17,17 @@
             <groupId>cn.v5cn.platform</groupId>
             <artifactId>v5cn-framework-core</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>cn.v5cn.platform</groupId>
+            <artifactId>v5cn-doc-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.v5cn.platform</groupId>
+            <artifactId>v5cn-log-spring-boot-starter</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>cn.v5cn.platform</groupId>
             <artifactId>v5cn-mybatis-spring-boot-starter</artifactId>

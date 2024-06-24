@@ -18,7 +18,7 @@ import java.util.List;
  * @author Lion Li
  */
 @Data
-@ConfigurationProperties(prefix = "v5cn.springdoc")
+@ConfigurationProperties(prefix = "springdoc")
 public class SpringDocProperties {
     /**
      * 文档基本信息

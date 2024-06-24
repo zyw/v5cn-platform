@@ -1,0 +1,2 @@
+cn.v5cn.platform.framework.protection.idempotent.config.IdempotentAutoConfiguration
+cn.v5cn.platform.framework.protection.ratelimiter.config.RateLimiterAutoConfiguration

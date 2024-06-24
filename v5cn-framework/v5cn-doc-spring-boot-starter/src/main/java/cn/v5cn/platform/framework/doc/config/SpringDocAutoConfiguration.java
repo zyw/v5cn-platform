@@ -38,7 +38,7 @@ import java.util.Set;
 @RequiredArgsConstructor
 @AutoConfiguration(before = SpringDocConfiguration.class)
 @EnableConfigurationProperties(SpringDocProperties.class)
-@ConditionalOnProperty(name = "v5cn.springdoc.api-docs.enabled", havingValue = "true", matchIfMissing = true)
+@ConditionalOnProperty(name = "springdoc.api-docs.enabled", havingValue = "true", matchIfMissing = true)
 public class SpringDocAutoConfiguration {
     private final ServerProperties serverProperties;
 
