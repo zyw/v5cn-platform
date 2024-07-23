@@ -1,5 +1,7 @@
- Application Version: ${revision}
- Spring Boot Version: ${spring-boot.version}
+V5管理平台 http://v5.v5cn.cn
+Application Version: ${v5cn.version}
+Spring Boot Version: ${spring-boot.version}
+
  ___      ___ ________  ________  ________           ________  ___       ________  _________  ________ ________  ________  _____ ______
 |\  \    /  /|\   ____\|\   ____\|\   ___  \        |\   __  \|\  \     |\   __  \|\___   ___\\  _____\\   __  \|\   __  \|\   _ \  _   \
 \ \  \  /  / | \  \___|\ \  \___|\ \  \\ \  \       \ \  \|\  \ \  \    \ \  \|\  \|___ \  \_\ \  \__/\ \  \|\  \ \  \|\  \ \  \\\__\ \  \
